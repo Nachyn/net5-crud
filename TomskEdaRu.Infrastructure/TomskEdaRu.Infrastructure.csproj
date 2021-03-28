@@ -4,4 +4,13 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\TomskEdaRu.Domain\TomskEdaRu.Domain.csproj" />
+      <ProjectReference Include="..\TomskEdaRu.Logic\TomskEdaRu.Logic.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.2" />
+    </ItemGroup>
+
 </Project>

@@ -1,0 +1,5 @@
+dotnet ef migrations add InitProject -s '../TomskEdaRu' -o './Database/Migrations'
+dotnet ef migrations add InitProject -s '../TomskEdaRu'
+dotnet ef migrations remove
+dotnet ef database update
+dotnet ef database update {Migration_Name}
