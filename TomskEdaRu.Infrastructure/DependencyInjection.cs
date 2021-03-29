@@ -16,7 +16,7 @@ namespace TomskEdaRu.Infrastructure
             services.AddTransient<IAppDbContext, AppDbContext>();
 
             services.AddDbContext<AppDbContext>(options =>
-                options.UseNpgsql(
+                options.UseSqlServer(
                     configuration.GetConnectionString("DefaultConnection"),
                     b => { b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName); }));
 
